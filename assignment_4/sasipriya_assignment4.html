@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>assignment4</title>
+	<style>
+		table,th,td
+		{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th,td
+		{
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Talk to Expert Registration Form</h2><hr><br>
+	<div>
+		<form action="index.php" method="post">
+		<table>
+			<caption>Talk to Expert Registration Form</caption>
+			<tr>
+				<td>Enter your First Name</td> 
+				<td>:</td>
+				<td><input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required></td>  <!-- required -->
+			</tr>
+			<tr>
+				<td>Enter your Last Name</td>
+				<td>:</td>
+				<td><input type="text" name="lastname" id="lastname" placeholder="Enter your last name" required></td>   <!-- required -->
+			</tr>
+			<tr>
+				<td>I am pursing</td>
+				<td>:</td>
+				<td>
+					CSE<input type="radio" name="radio" value="cse">
+					ECE<input type="radio" name="radio" value="ece">
+					Mech<input type="radio" name="radio" value="mech">
+					Other<input type="radio" name="radio" value="other">
+				</td>
+			</tr>
+			<tr>
+				<td>I am good AT</td>
+				<td>:</td>
+				<td>
+					JAVA<input type="checkbox" name="checkbox" value="java">
+					PYTHON<input type="checkbox" name="checkbox" value="python">
+					HTML<input type="checkbox" name="checkbox" value="html">
+					JS<input type="checkbox" name="checkbox" value="js">
+				</td>
+			</tr>
+			<tr>
+				<td>Mobile Number</td>
+				<td>:</td>
+				<td><input type="text" name="number" id="number" placeholder="9876543210"></td>
+			</tr>
+			<tr>
+				<td>Graduation Year</td>
+				<td>:</td>
+				<td>
+					<select>
+						<option>Select Year</option>
+						<option disabled>2021</option>    <!-- diasbled year 2021 -->
+						<option>2022</option>
+						<option>2023</option>
+						<option>2024</option>
+						<option>2025</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Any queries?"</td>
+				<td>:</td>
+				<td>
+					<textarea name="query" rows="4" cols="20" placeholder="Rows-4,Cols-20"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><input type="submit" value="submit"></td>
+			</tr>	
+		</table>
+	</div>
+</body>
+</html>
